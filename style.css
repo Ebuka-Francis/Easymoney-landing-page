@@ -1,0 +1,417 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.gcon {
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #fff;
+  color: #000;
+  align-items: center;
+  height: 75px;
+  z-index: 1;
+  position: sticky;
+  z-index: 1000;
+  /* max-width: 100%; */
+}
+.menu {
+  display: none;
+}
+
+.topnav {
+  display: flex;
+  gap: 50px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  opacity: 0.7;
+  cursor: pointer;
+  height: 40px;
+}
+
+a:hover {
+  border-bottom: 8px solid transparent;
+  border-image: linear-gradient(
+    0.25turn,
+    hsl(136, 65%, 51%),
+    hsl(192, 70%, 51%)
+  );
+  border-image-slice: 1;
+  width: 100%;
+}
+
+.invite {
+  background-image: linear-gradient(
+    to right,
+    hsl(136, 65%, 51%),
+    hsl(192, 70%, 51%)
+  );
+  color: #fff;
+  border-radius: 20px;
+  width: 150px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.invites {
+  background-image: linear-gradient(
+    to right,
+    hsl(136, 65%, 51%),
+    hsl(192, 70%, 51%)
+  );
+  color: #fff;
+  border-radius: 20px;
+  width: 150px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* z-index: 1; */
+  cursor: pointer;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+}
+
+.typo1 {
+  font-size: clamp(3rem, 2.5vw, 6em);
+}
+
+.typo2 {
+  opacity: 0.4;
+  font-size: 20px;
+}
+
+.container1 {
+  background-color: hsl(0, 0%, 98%);
+  display: flex;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  /* overflow-x: hidden; */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding-left: 7em;
+  height: 700px;
+  max-width: 50%;
+}
+
+.phonebackground {
+  background-image: url("images/bg-intro-desktop.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -100px;
+  max-width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* overflow-x: hidden; */
+}
+
+.phonebackground img {
+  max-width: 100%;
+  position: relative;
+  z-index: 100;
+}
+
+.typo3 {
+  font-size: 3em;
+}
+
+.whychoose {
+  background-color: hsl(220, 16%, 96%);
+  display: flex;
+  flex-direction: column;
+  gap: 6em;
+  justify-content: center;
+  padding: 6em;
+  position: relative;
+  z-index: 10;
+  max-width: 100%;
+}
+
+.onlinebanking {
+  display: flex;
+  gap: 20px;
+}
+
+.online {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 50%;
+}
+.container3 {
+  padding: 12px;
+}
+
+.banking {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.article {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.text2 {
+  color: #000;
+  font-size: 20px;
+}
+
+.LAI img {
+  width: 100%;
+}
+
+.LAI {
+  border-radius: 5px;
+}
+
+.text2:hover {
+  color: hsl(136, 65%, 51%);
+  cursor: pointer;
+}
+
+.latestarticle {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  border-radius: 30px;
+}
+
+.latestarticle img {
+  max-width: 100%;
+}
+
+.txt {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+.container3 {
+  background-color: hsl(0, 0%, 98%);
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+  gap: 50px;
+}
+
+footer {
+  background-color: hsl(232, 61%, 17%);
+  color: #fff;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sublogo {
+  display: flex;
+  gap: 20px;
+}
+
+.footer1 {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.p3 {
+  color: #fff;
+  cursor: pointer;
+}
+
+.p3:hover {
+  color: hsl(135, 81%, 43%);
+}
+
+.abts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.abt {
+  display: flex;
+  gap: 70px;
+}
+
+.class {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.icon :hover {
+  background-image: hsl(135, 81%, 43%);
+}
+/* @media screen and (min-width: 2560px) {
+  .container1 [
+    overflow-x: hidden;
+  ]
+} */
+@media screen and (max-width: 1050px){
+  .container1 {
+    overflow-x: hidden;
+  }
+
+}
+
+@media screen and (max-width: 800px){
+  .container1 {
+    overflow-x: hidden;
+  }
+  .container {
+    padding-left: 3em;
+    /* height: 572px; */
+  }
+  .whychoose {
+    padding: 2em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+  .menu {
+    display: block;
+  }
+  .phonebackground {
+    background-image: url("images/bg-intro-mobile.svg");
+    /* left: 0; */
+    max-width: 100%;
+    right: 0;
+  }
+  img {
+    max-width: 100%;
+  }
+  .phonebackground img {
+    max-width: 100%;
+  }
+  .container1 {
+    flex-direction: column;
+  }
+  .container {
+    padding-left: 0;
+    max-width: 100%;
+    padding-top: 304px;
+  
+  }
+  .whychoose {
+    padding: 12px;
+    gap: 2em;
+  }
+  .online {
+    max-width: 100%;
+    gap: 2px;
+    text-align: center;
+  }
+  .invites {
+    display: none;
+  }
+  .onlinebanking {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .banking {
+    gap: 15px;
+    align-items: center;
+  }
+  .container3 {
+    padding: 10px;
+    gap: 20px;
+  }
+  .latestarticle {
+    gap: 10px;
+  }
+  .article {
+    gap: 2px;
+  }
+  .footer1 {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .abt {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .topnav {
+    display: none;
+  }
+  nav {
+    justify-content: space-between;
+  }
+  footer {
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .class{
+  align-items:center;
+  gap: 10px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container {
+    padding-top: 466px;
+    height: 780px;
+    align-items: center;
+    gap: 17px;
+    max-width: 80%;
+  }
+  .phonebackground {
+    max-width: 94%;
+  }
+
+}
+@media screen and (max-width: 375px) {
+  .phonebackground {
+    max-width: 100%;
+  }
+  .container {
+    max-width: 88%;
+    padding-top: 427px;
+    height: 734px;
+  }
+}
+@media screen and (max-width: 320px) {
+.container {
+      max-width: 100%;
+    padding-top: 389px;
+    height: 685px;
+}
+}
+
